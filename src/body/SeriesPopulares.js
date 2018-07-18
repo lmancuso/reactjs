@@ -40,7 +40,7 @@ constructor(props){
                 <h5 className="items-section-title">Series más Populares <a href="">Ver todas</a></h5>
                 <div className="items-section-body">
                     <div className="row">
-                    {this.state.series.map(serie => <ItemPeliculaGrid link="{serie.url}" image="imagen" title="{serie.title}" date="{serie.endYear}"/>)}
+                    {this.state.series.map(serie => <ItemPeliculaGrid link={serie.url} image="imagen" title={serie.title} date={serie.endYear} />)}
                     </div>
                 </div>
             </section>
