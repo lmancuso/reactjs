@@ -8,13 +8,12 @@ class Api{
 			baseURL: 'https://gateway.marvel.com',
 			params: {
 				apikey: API_KEY,
-				limit: '6',
 			},
 		})
 	}
 
-	seriePopular = () => {
-		return this.axios.get('/v1/public/series').then(response => {
+	seriesPopular = () => {
+		return this.axios.get('/v1/public/series?limit=6').then(response => {
 			return response.data
 		})
 	}
@@ -25,9 +24,9 @@ class Api{
 		})
 	}
 
-	listVehicle = () => {
-		return this.axios.get('/vehicles').then(response => {
-			return response.data.results
+	comicsPopular = () => {
+		return this.axios.get('/v1/public/comics?limit=6').then(response => {
+			return response.data
 		})
 	}
 
