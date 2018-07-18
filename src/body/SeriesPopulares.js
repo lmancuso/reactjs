@@ -17,9 +17,9 @@ constructor(props){
 
   componentDidMount() {
     this.api.seriePopular().then(response => {
-      console.log(response);
+      console.log(response.data);
       this.setState({
-        series: response,
+        series: response.data,
         loading:false
       }) 
       
