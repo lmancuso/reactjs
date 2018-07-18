@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './header';
-import Body from './body';
+import Contenido from './Contenido.js';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
         
       <Header />
 
-      <Body />
+      <Contenido />
         
       </div>
     );

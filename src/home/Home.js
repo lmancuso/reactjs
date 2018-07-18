@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import MiLista from './MiLista';
-import PeliculasPopulares from './PeliculasPopulares';
+import ComicsPopulares from './ComicsPopulares';
 import SeriesPopulares from './SeriesPopulares';
 
-class Body extends Component{
+class Home extends Component{
 	render(){
 		return(
 			<main role="main">
@@ -12,7 +12,7 @@ class Body extends Component{
             
             <MiLista />
 
-            <PeliculasPopulares />
+            <ComicsPopulares />
 
             <SeriesPopulares />
 
@@ -27,4 +27,4 @@ class Body extends Component{
 }
 
 
-export default Body;
+export default Home;
